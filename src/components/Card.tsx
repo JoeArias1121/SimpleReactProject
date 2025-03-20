@@ -1,13 +1,14 @@
 
 interface CardProps {
-  count: number;
+  sets: number;
+  reps: number;
 }
 
-function Card({ count }: CardProps) {
+function Card({ sets, reps }: CardProps) {
   return (
     <div>
-      <h1>Card</h1>
-      <p>Count: {count}</p>
+      <h1>Workout</h1>
+      <p>Sets: {sets} | Reps: {reps}</p>
     </div>
   )
 }
