@@ -9,16 +9,21 @@ function App() {
   return (
     <>
       <Card reps={countReps} sets={countSets} />
-      <h1>Spam the button</h1>
-      <button onClick={() => setCountReps((countReps) => countReps + 1)}>
-        Reps = {countReps}
-      </button>
+      <p>Reps:</p>
+      <input
+        type="number"
+        placeholder="0"
+        onChange={(e) => setCountReps(Number(e.target.value))}
+      />
       <br />
-      <button onClick={() => setCountSets((countSets) => countSets + 1)}>
-        Sets = {countSets}
-      </button>
+      <p>Sets:</p>
+      <input
+        type="number"
+        placeholder="0"
+        onChange={(e) => setCountSets(Number(e.target.value))}
+      />
     </>
-  )
+  );
 }
 
 
