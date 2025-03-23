@@ -9,6 +9,7 @@ function Card({ sets, reps }: CardProps) {
     <div>
       <h1>Workout</h1>
       <p>Sets: {sets} | Reps: {reps}</p>
+      <p>Total reps: {sets * reps}</p>
     </div>
   )
 }
